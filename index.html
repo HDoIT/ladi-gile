@@ -12804,10 +12804,6 @@
                     name: document.querySelector('input[name="name"]')?.value || '',
                     phone: document.querySelector('input[name="phone"]')?.value || '',
                     street: document.querySelector('input[name="street"]')?.value || '',
-                    country: document.querySelector('input[name="country"]')?.value || '',
-                    state: document.querySelector('select[name="state"]')?.value || '',
-                    district: document.querySelector('select[name="district"]')?.value || '',
-                    ward: document.querySelector('select[name="ward"]')?.value || '',
                     message: document.querySelector('textarea[name="message"]')?.value || '',
                     san_pham: document.querySelector('textarea[name="san_pham"]')?.value || '',
                     tong_tien: document.querySelector('textarea[name="tong_tien"]')?.value || ''
@@ -12815,7 +12811,6 @@
 
                 // Kiểm tra các trường bắt buộc
                 if (!formData.name || !formData.phone || !formData.street ||
-                    !formData.state || !formData.district || !formData.ward ||
                     !formData.san_pham) {
                     alert('Vui lòng điền đầy đủ thông tin bắt buộc!');
                     return;
@@ -12834,7 +12829,7 @@
                 submitButton.style.pointerEvents = 'none';
 
                 // Gửi dữ liệu đến Google Apps Script
-                const scriptURL = 'https://script.google.com/macros/s/AKfycbz9akGi5dy_WOh_-IaIpfOWIO2dG01oKk9gPz8vr3xXlHx0kRUkIjIDxZ8YqCfLxtQvXA/exec'; // Thay bằng URL Web App của bạn
+                const scriptURL = 'https://script.google.com/macros/s/AKfycbz9XTj7xMfBLuY3rRlLSfDEXYzzXeDaBp2oQfgegv7SrjMB0mTYBb-BaKdgi4VJ1pFF/exec'; // Thay bằng URL Web App của bạn
 
                 fetch(scriptURL, {
                     method: 'POST',
