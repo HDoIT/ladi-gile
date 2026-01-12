@@ -12056,786 +12056,329 @@
         type="application/json">{"SECTION3":{"a":"section","aB":true,"ax":"top","au":"0px","ao":"0px"},"HEADLINE20":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE21":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE22":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE23":{"option.is_product_mapping_name_custom":true,"a":"headline"},"SECTION14":{"a":"section","aB":true,"ax":"bottom","au":"0px","ao":"0px"},"HEADLINE311":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE124":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE123":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE129":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE135":{"option.is_product_mapping_name_custom":true,"a":"headline"},"GROUP109":{"a":"group","cs":[{"dr":"action","dE":["POPUP1"],"dD":["GROUP329"],"a":"hidden_show"},{"event_custom_script":"\r\n  ladi(&#39;POPUP5&#39;).show();\r\n\r\n  setTimeout(function() &#123;\r\n    ladi(&#39;POPUP5&#39;).hide();\r\n  &#125;, 1500);\r\n","dr":"action","a":"custom_script"},{"event_custom_script":"\r\n  ladi(&#39;BOX131&#39;).show();\r\n\r\n  setTimeout(function() &#123;\r\n    ladi(&#39;BOX131&#39;).hide();\r\n  &#125;, 2000);\r\n","dr":"action","a":"custom_script"}]},"HEADLINE134":{"option.is_product_mapping_name_custom":true,"a":"headline"},"SHAPE89":{"a":"shape","cj":"const headline = document.getElementById(&#34;HEADLINE134&#34;);\nif (headline) &#123;\n  const host = headline.querySelector(&#34;.ladi-headline, .ladi-paragraph, span, p&#34;) || headline;\n\n  const tw = document.createTreeWalker(host, NodeFilter.SHOW_TEXT, &#123;\n    acceptNode: n =&#62; /&#165;d/.test(n.nodeValue) ? NodeFilter.FILTER_ACCEPT : NodeFilter.FILTER_SKIP\n  &#125;);\n\n  const node = tw.nextNode() || host.firstChild || host.appendChild(document.createTextNode(&#34;&#34;));\n  const match = String(node.nodeValue || &#34;&#34;).match(/&#165;d[&#165;d&#165;s.,]*/);\n  const currentValue = parseInt((match ? match[0] : &#34;&#34;).replace(/[^&#165;d]/g, &#34;&#34;), 10) || 1;\n  const newValue = Math.max(1, currentValue - 1); // Không cho nhỏ hơn 1\n\n  node.nodeValue = match\n    ? node.nodeValue.replace(match[0], String(newValue))\n    : String(newValue);\n&#125;"},"SHAPE88":{"a":"shape","cj":"const headline = document.getElementById(&#34;HEADLINE134&#34;);\nif (headline) &#123;\n  const host = headline.querySelector(&#34;.ladi-headline, .ladi-paragraph, span, p&#34;) || headline;\n\n  const tw = document.createTreeWalker(host, NodeFilter.SHOW_TEXT, &#123;\n    acceptNode: n =&#62; /&#165;d/.test(n.nodeValue) ? NodeFilter.FILTER_ACCEPT : NodeFilter.FILTER_SKIP\n  &#125;);\n\n  const node = tw.nextNode() || host.firstChild || host.appendChild(document.createTextNode(&#34;&#34;));\n  const match = String(node.nodeValue || &#34;&#34;).match(/&#165;d[&#165;d&#165;s.,]*/);\n  const currentValue = parseInt((match ? match[0] : &#34;&#34;).replace(/[^&#165;d]/g, &#34;&#34;), 10) || 1;\n\n  node.nodeValue = match\n    ? node.nodeValue.replace(match[0], String(currentValue + 1))\n    : String(currentValue + 1);\n&#125;\n"},"HEADLINE133":{"option.is_product_mapping_name_custom":true,"a":"headline"},"POPUP1":{"a":"popup","D":"fadeInUpBig","X":"bottom_center","U":"background-color: rgba(1, 1, 1, 0.2);"},"HEADLINE341":{"option.is_product_mapping_name_custom":true,"a":"headline","cs":[{"dr":"action"}],"cr":true},"HEADLINE350":{"option.is_product_mapping_name_custom":true,"a":"headline"},"BUTTON_TEXT30":{"option.is_product_mapping_name_custom":true,"a":"headline"},"BUTTON30":{"a":"button","cs":[{"dr":"action","dw":"TEXT_CHON_SIZE","dL":"M (48-57kg)","a":"set_value"}]},"BUTTON_TEXT31":{"option.is_product_mapping_name_custom":true,"a":"headline"},"BUTTON31":{"a":"button","cs":[{"dr":"action","dw":"TEXT_CHON_SIZE","dL":"L (58-65kg)","a":"set_value"}]},"BUTTON_TEXT32":{"option.is_product_mapping_name_custom":true,"a":"headline"},"BUTTON32":{"a":"button","cs":[{"dr":"action","dw":"TEXT_CHON_SIZE","dL":"XL (66-72kg)","a":"set_value"}]},"BUTTON_TEXT33":{"option.is_product_mapping_name_custom":true,"a":"headline"},"BUTTON33":{"a":"button","cs":[{"dr":"action","dw":"TEXT_CHON_SIZE","dL":"2XL (65-70kg)","a":"set_value"}]},"HEADLINE413":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE497":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE498":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE499":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE500":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE502":{"option.is_product_mapping_name_custom":true,"a":"headline"},"SHAPE128":{"a":"shape","cj":"const headline = document.getElementById(&#34;HEADLINE503&#34;);\nif (headline) &#123;\n  const host = headline.querySelector(&#34;.ladi-headline, .ladi-paragraph, span, p&#34;) || headline;\n\n  const tw = document.createTreeWalker(host, NodeFilter.SHOW_TEXT, &#123;\n    acceptNode: n =&#62; /&#165;d/.test(n.nodeValue) ? NodeFilter.FILTER_ACCEPT : NodeFilter.FILTER_SKIP\n  &#125;);\n\n  const node = tw.nextNode() || host.firstChild || host.appendChild(document.createTextNode(&#34;&#34;));\n  const match = String(node.nodeValue || &#34;&#34;).match(/&#165;d[&#165;d&#165;s.,]*/);\n  const currentValue = parseInt((match ? match[0] : &#34;&#34;).replace(/[^&#165;d]/g, &#34;&#34;), 10) || 1;\n\n  node.nodeValue = match\n    ? node.nodeValue.replace(match[0], String(currentValue + 1))\n    : String(currentValue + 1);\n&#125;\n"},"SHAPE129":{"a":"shape","cj":"const headline = document.getElementById(&#34;HEADLINE503&#34;);\nif (headline) &#123;\n  const host = headline.querySelector(&#34;.ladi-headline, .ladi-paragraph, span, p&#34;) || headline;\n\n  const tw = document.createTreeWalker(host, NodeFilter.SHOW_TEXT, &#123;\n    acceptNode: n =&#62; /&#165;d/.test(n.nodeValue) ? NodeFilter.FILTER_ACCEPT : NodeFilter.FILTER_SKIP\n  &#125;);\n\n  const node = tw.nextNode() || host.firstChild || host.appendChild(document.createTextNode(&#34;&#34;));\n  const match = String(node.nodeValue || &#34;&#34;).match(/&#165;d[&#165;d&#165;s.,]*/);\n  const currentValue = parseInt((match ? match[0] : &#34;&#34;).replace(/[^&#165;d]/g, &#34;&#34;), 10) || 1;\n  const newValue = Math.max(1, currentValue - 1); // Không cho nhỏ hơn 1\n\n  node.nodeValue = match\n    ? node.nodeValue.replace(match[0], String(newValue))\n    : String(newValue);\n&#125;"},"HEADLINE503":{"option.is_product_mapping_name_custom":true,"a":"headline"},"SHAPE130":{"a":"shape","cs":[{"dr":"action","dE":["GROUP306"],"a":"hidden_show"}]},"HEADLINE504":{"option.is_product_mapping_name_custom":true,"a":"headline"},"FORM_ITEM45":{"a":"form_item","bS":"text","bQ":1},"FORM_ITEM46":{"a":"form_item","bS":"tel","bQ":2},"FORM_ITEM47":{"a":"form_item","bS":"text","bQ":3},"BUTTON_TEXT64":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE538":{"option.is_product_mapping_name_custom":true,"a":"headline"},"POPUP5":{"a":"popup","D":"bounceIn","X":"default","U":"background-color: rgba(1, 1, 1, 0);"},"BOX131":{"a":"box","D":"bounceInUp","A":"0s"},"GROUP329":{"a":"group","D":"bounceIn","A":"0s"},"HEADLINE543":{"option.is_product_mapping_name_custom":true,"a":"headline"},"GROUP331":{"a":"group","cs":[{"dr":"action","dD":["SECTION33"],"dE":["SECTION1","SECTION2","SECTION3","SECTION4","SECTION5","SECTION6","SECTION7","SECTION8","SECTION9","SECTION10","SECTION11","SECTION12","SECTION13","SECTION14","SECTION15","SECTION16","SECTION17","SECTION18","SECTION19","SECTION20","SECTION21","SECTION22","SECTION23"],"a":"hidden_show"},{"dr":"action","dw":"SECTION33","a":"section"}]},"ANH_CHON_MAU":{"a":"image","cs":[{"dr":"action","dw":"POPUP6","a":"popup"}]},"TEXT_CHON_MAU":{"option.is_product_mapping_name_custom":true,"a":"headline"},"TEXT_CHON_SIZE":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE623":{"option.is_product_mapping_name_custom":true,"a":"headline"},"IMAGE390":{"a":"image","cs":[{"dr":"action","dw":"SECTION29","a":"section"}]},"GROUP330":{"a":"group","cs":[{"dr":"action","dw":"SECTION29","a":"section"},{"dr":"action","dE":["SECTION1","SECTION2","SECTION3","SECTION4","SECTION5","SECTION6","SECTION7","SECTION8","SECTION9","SECTION10","SECTION11","SECTION14","SECTION15","SECTION16","SECTION21","SECTION23","SECTION33"],"dD":["SECTION29","SECTION34"],"a":"hidden_show"},{"event_custom_script":"fixAfterShow(&#39;SECTION29&#39;);","dr":"action","a":"custom_script"}]},"HEADLINE626":{"option.is_product_mapping_name_custom":true,"a":"headline"},"IMAGE392":{"a":"image","cs":[{"dr":"action","dw":"GALLERY4","dH":1,"a":"change_index"},{"dr":"action","dw":"HEADLINE626","dL":"Áo GILE","a":"set_value"}]},"IMAGE393":{"a":"image","cs":[{"dr":"action","dw":"GALLERY4","dH":2,"a":"change_index"},{"dr":"action","dw":"HEADLINE626","dL":"Áo GILE","a":"set_value"}]},"IMAGE394":{"a":"image","cs":[{"dr":"action","dw":"GALLERY4","dH":3,"a":"change_index"},{"dr":"action","dw":"HEADLINE626","dL":"Áo GILE","a":"set_value"}]},"IMAGE395":{"a":"image","cs":[{"dr":"action","dw":"GALLERY4","dH":4,"a":"change_index"},{"dr":"action","dw":"HEADLINE626","dL":"Áo GILE","a":"set_value"}]},"IMAGE396":{"a":"image","cs":[{"dr":"action","dw":"GALLERY4","dH":5,"a":"change_index"},{"dr":"action","dw":"HEADLINE626","dL":"Áo GILE","a":"set_value"}]},"IMAGE397":{"a":"image","cs":[{"dr":"action","dw":"GALLERY4","dH":6,"a":"change_index"},{"dr":"action","dw":"HEADLINE626","dL":"Áo GILE","a":"set_value"}]},"GALLERY4":{"a":"gallery","ah":true,"ae":3},"HEADLINE627":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE628":{"option.is_product_mapping_name_custom":true,"a":"headline"},"COUNTDOWN_ITEM9":{"a":"countdown_item","bY":"day"},"COUNTDOWN_ITEM10":{"a":"countdown_item","bY":"hour"},"COUNTDOWN_ITEM11":{"a":"countdown_item","bY":"minute"},"COUNTDOWN_ITEM12":{"a":"countdown_item","bY":"seconds"},"COUNTDOWN3":{"a":"countdown","bX":"countdown","bW":480},"HEADLINE629":{"option.is_product_mapping_name_custom":true,"a":"headline"},"SHAPE154":{"a":"shape","cs":[{"dr":"action","dE":["SHAPE154"],"dD":["SHAPE155"],"a":"hidden_show"}]},"SHAPE155":{"a":"shape","cs":[{"dr":"action","dD":["SHAPE154"],"dE":["SHAPE155"],"a":"hidden_show"}]},"HEADLINE630":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE631":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE632":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE633":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE634":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE635":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE636":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE637":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE638":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE639":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE640":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE641":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE642":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE643":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE644":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE645":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE646":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE647":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE648":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE649":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE650":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE651":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE652":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE653":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE654":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE655":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE656":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE657":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE658":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE659":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE660":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE661":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE662":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE663":{"option.is_product_mapping_name_custom":true,"a":"headline"},"SHAPE169":{"a":"shape","cs":[{"dr":"action","dD":["SHAPE170"],"dE":["SHAPE169"],"a":"hidden_show"}]},"SHAPE170":{"a":"shape","cs":[{"dr":"action","dE":["SHAPE170"],"dD":["SHAPE169"],"a":"hidden_show"}]},"HEADLINE664":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE665":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE666":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE667":{"option.is_product_mapping_name_custom":true,"a":"headline"},"SHAPE176":{"a":"shape","cs":[{"dr":"action","dD":["SHAPE177"],"dE":["SHAPE176"],"a":"hidden_show"}]},"SHAPE177":{"a":"shape","cs":[{"dr":"action","dE":["SHAPE177"],"dD":["SHAPE176"],"a":"hidden_show"}]},"HEADLINE668":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE669":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE670":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE671":{"option.is_product_mapping_name_custom":true,"a":"headline"},"SHAPE183":{"a":"shape","cs":[{"dr":"action","dD":["SHAPE184"],"dE":["SHAPE183"],"a":"hidden_show"}]},"SHAPE184":{"a":"shape","cs":[{"dr":"action","dE":["SHAPE184"],"dD":["SHAPE183"],"a":"hidden_show"}]},"HEADLINE672":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE673":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE674":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE675":{"option.is_product_mapping_name_custom":true,"a":"headline"},"SHAPE190":{"a":"shape","cs":[{"dr":"action","dD":["SHAPE191"],"dE":["SHAPE190"],"a":"hidden_show"}]},"SHAPE191":{"a":"shape","cs":[{"dr":"action","dE":["SHAPE191"],"dD":["SHAPE190"],"a":"hidden_show"}]},"HEADLINE676":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE677":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE678":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE679":{"option.is_product_mapping_name_custom":true,"a":"headline"},"SHAPE197":{"a":"shape","cs":[{"dr":"action","dD":["SHAPE198"],"dE":["SHAPE197"],"a":"hidden_show"}]},"SHAPE198":{"a":"shape","cs":[{"dr":"action","dE":["SHAPE198"],"dD":["SHAPE197"],"a":"hidden_show"}]},"HEADLINE680":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE681":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE682":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE683":{"option.is_product_mapping_name_custom":true,"a":"headline"},"SHAPE204":{"a":"shape","cs":[{"dr":"action","dD":["SHAPE205"],"dE":["SHAPE204"],"a":"hidden_show"}]},"SHAPE205":{"a":"shape","cs":[{"dr":"action","dE":["SHAPE205"],"dD":["SHAPE204"],"a":"hidden_show"}]},"HEADLINE684":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE685":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE686":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE687":{"option.is_product_mapping_name_custom":true,"a":"headline"},"SHAPE211":{"a":"shape","cs":[{"dr":"action","dD":["SHAPE212"],"dE":["SHAPE211"],"a":"hidden_show"}]},"SHAPE212":{"a":"shape","cs":[{"dr":"action","dE":["SHAPE212"],"dD":["SHAPE211"],"a":"hidden_show"}]},"HEADLINE688":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE689":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE690":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE691":{"option.is_product_mapping_name_custom":true,"a":"headline"},"SHAPE218":{"a":"shape","cs":[{"dr":"action","dD":["SHAPE219"],"dE":["SHAPE218"],"a":"hidden_show"}]},"SHAPE219":{"a":"shape","cs":[{"dr":"action","dE":["SHAPE219"],"dD":["SHAPE218"],"a":"hidden_show"}]},"HEADLINE692":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE693":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE694":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE695":{"option.is_product_mapping_name_custom":true,"a":"headline"},"SHAPE225":{"a":"shape","cs":[{"dr":"action","dD":["SHAPE226"],"dE":["SHAPE225"],"a":"hidden_show"}]},"SHAPE226":{"a":"shape","cs":[{"dr":"action","dE":["SHAPE226"],"dD":["SHAPE225"],"a":"hidden_show"}]},"HEADLINE696":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE697":{"option.is_product_mapping_name_custom":true,"a":"headline"},"VIDEO33":{"a":"video","ci":"https://youtube.com/shorts/UwhMZqbMXNc?feature=share","ch":"youtube","cg":true},"VIDEO34":{"a":"video","ci":"https://youtube.com/shorts/f_0XmaZDVpU?feature=share","ch":"youtube","cg":true},"VIDEO35":{"a":"video","ci":"https://youtube.com/shorts/zc0W03aZnN4?si=dfoB8PoHyHJYwL7R","ch":"youtube","cg":true},"VIDEO36":{"a":"video","ci":"https://youtube.com/shorts/zc0W03aZnN4?si=dfoB8PoHyHJYwL7R","ch":"youtube","cg":true},"VIDEO37":{"a":"video","ci":"https://youtube.com/shorts/zc0W03aZnN4?si=dfoB8PoHyHJYwL7R","ch":"youtube","cg":true},"VIDEO38":{"a":"video","ci":"https://youtube.com/shorts/zc0W03aZnN4?si=dfoB8PoHyHJYwL7R","ch":"youtube","cg":true},"GROUP432":{"a":"group","aE":true},"HEADLINE698":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE699":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE700":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE701":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE702":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE703":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE704":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE705":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE706":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE707":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE708":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE709":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE710":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE711":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE712":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE713":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE714":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE715":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE716":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE717":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE718":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE719":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE720":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE721":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE722":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE723":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE724":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE725":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE726":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE727":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE728":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE729":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE730":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE731":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE732":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE733":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE734":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE735":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE736":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE737":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE738":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE739":{"option.is_product_mapping_name_custom":true,"a":"headline"},"GROUP440":{"a":"group","cs":[{"dr":"action","dD":["SECTION8"],"dE":["SECTION23"],"a":"hidden_show"}]},"HEADLINE748":{"option.is_product_mapping_name_custom":true,"a":"headline","cs":[{"dr":"action","a":"collapse"}]},"HEADLINE753":{"option.is_product_mapping_name_custom":true,"a":"headline"},"GROUP445":{"a":"group","cs":[{"dr":"action","dE":["SECTION8"],"dD":["SECTION23"],"a":"hidden_show"}]},"HEADLINE756":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE757":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE758":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE759":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE760":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE761":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE762":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE763":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE764":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE765":{"option.is_product_mapping_name_custom":true,"a":"headline"},"FRAME74":{"a":"frame","cs":[{"dr":"action","dw":"POPUP1","a":"popup"}]},"HEADLINE766":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE767":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE768":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE769":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE770":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE771":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE772":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE773":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE774":{"option.is_product_mapping_name_custom":true,"a":"headline"},"FRAME75":{"a":"frame","cs":[{"dr":"action","dw":"POPUP1","a":"popup"}]},"HEADLINE775":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE776":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE777":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE778":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE779":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE780":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE781":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE782":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE783":{"option.is_product_mapping_name_custom":true,"a":"headline"},"FRAME76":{"a":"frame","cs":[{"dr":"action","dw":"POPUP1","a":"popup"}]},"HEADLINE784":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE785":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE786":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE787":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE788":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE789":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE790":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE791":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE792":{"option.is_product_mapping_name_custom":true,"a":"headline"},"FRAME77":{"a":"frame","cs":[{"dr":"action","dw":"POPUP1","a":"popup"}]},"HEADLINE793":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE794":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE795":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE796":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE797":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE798":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE799":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE800":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE801":{"option.is_product_mapping_name_custom":true,"a":"headline"},"FRAME78":{"a":"frame","cs":[{"dr":"action","dw":"POPUP1","a":"popup"}]},"HEADLINE802":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE803":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE804":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE805":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE806":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE807":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE808":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE809":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE810":{"option.is_product_mapping_name_custom":true,"a":"headline"},"FRAME79":{"a":"frame","cs":[{"dr":"action","dw":"POPUP1","a":"popup"}]},"HEADLINE829":{"option.is_product_mapping_name_custom":true,"a":"headline"},"GROUP457":{"a":"group","cs":[{"dr":"action","dv":"_blank","dw":"https://www.facebook.com/thanhyenvietnam/","a":"link"}]},"HEADLINE830":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE831":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE832":{"option.is_product_mapping_name_custom":true,"a":"headline"},"GROUP91":{"a":"group","cs":[{"dr":"action","dw":"POPUP1","a":"popup"}]},"GROUP93":{"a":"group","cs":[{"dr":"action","dw":"POPUP1","a":"popup"}]},"IMAGE514":{"a":"image","cs":[{"dr":"action","dv":"_blank","dw":"https://m.me/104527059033017","a":"link"}]},"HEADLINE836":{"option.is_product_mapping_name_custom":true,"a":"headline"},"SHAPE136":{"a":"image","cs":[{"dr":"action","dE":["SECTION29","SECTION34"],"dD":["SECTION1","SECTION2","SECTION3","SECTION4","SECTION5","SECTION6","SECTION7","SECTION10","SECTION11","SECTION14","SECTION15","SECTION16","SECTION21","SECTION23"],"a":"hidden_show"},{"dr":"action","dw":"SECTION1","a":"section"}]},"HEADLINE837":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE838":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE839":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE840":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE841":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE842":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE843":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE845":{"option.is_product_mapping_name_custom":true,"a":"headline"},"BUTTON_TEXT66":{"option.is_product_mapping_name_custom":true,"a":"headline"},"SHAPE265":{"a":"shape","cs":[{"dr":"1st_click","dw":"SHAPE376","dL":"&#60;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; width=&#34;100%&#34; height=&#34;100%&#34; preserveAspectRatio=&#34;none&#34; viewBox=&#34;0 0 24 24&#34; class=&#34;&#34;&#62; &#60;path d=&#34;M19,3H5C3.89,3 3,3.89 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5C21,3.89 20.1,3 19,3M19,5V19H5V5H19Z&#34;&#62;&#60;/path&#62; &#60;/svg&#62;","a":"set_value"},{"dr":"1st_click","dw":"SHAPE403","dL":"&#60;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; width=&#34;100%&#34; height=&#34;100%&#34; preserveAspectRatio=&#34;none&#34; viewBox=&#34;0 0 24 24&#34; class=&#34;&#34;&#62; &#60;path d=&#34;M19,3H5C3.89,3 3,3.89 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5C21,3.89 20.1,3 19,3M19,5V19H5V5H19Z&#34;&#62;&#60;/path&#62; &#60;/svg&#62;","a":"set_value"},{"dr":"1st_click","dw":"SHAPE407","dL":"&#60;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; width=&#34;100%&#34; height=&#34;100%&#34; preserveAspectRatio=&#34;none&#34; viewBox=&#34;0 0 24 24&#34; class=&#34;&#34;&#62; &#60;path d=&#34;M19,3H5C3.89,3 3,3.89 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5C21,3.89 20.1,3 19,3M19,5V19H5V5H19Z&#34;&#62;&#60;/path&#62; &#60;/svg&#62;","a":"set_value"},{"dr":"1st_click","dw":"SHAPE399","dL":"&#60;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; width=&#34;100%&#34; height=&#34;100%&#34; preserveAspectRatio=&#34;none&#34; viewBox=&#34;0 0 24 24&#34; class=&#34;&#34;&#62; &#60;path d=&#34;M19,3H5C3.89,3 3,3.89 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5C21,3.89 20.1,3 19,3M19,5V19H5V5H19Z&#34;&#62;&#60;/path&#62; &#60;/svg&#62;","a":"set_value"},{"dr":"1st_click","dw":"SHAPE411","dL":"&#60;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; width=&#34;100%&#34; height=&#34;100%&#34; preserveAspectRatio=&#34;none&#34; viewBox=&#34;0 0 24 24&#34; class=&#34;&#34;&#62; &#60;path d=&#34;M19,3H5C3.89,3 3,3.89 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5C21,3.89 20.1,3 19,3M19,5V19H5V5H19Z&#34;&#62;&#60;/path&#62; &#60;/svg&#62;","a":"set_value"},{"dr":"1st_click","dw":"SHAPE415","dL":"&#60;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; width=&#34;100%&#34; height=&#34;100%&#34; preserveAspectRatio=&#34;none&#34; viewBox=&#34;0 0 24 24&#34; class=&#34;&#34;&#62; &#60;path d=&#34;M19,3H5C3.89,3 3,3.89 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5C21,3.89 20.1,3 19,3M19,5V19H5V5H19Z&#34;&#62;&#60;/path&#62; &#60;/svg&#62;","a":"set_value"},{"dr":"1st_click","dw":"SHAPE425","dL":"&#60;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; width=&#34;100%&#34; height=&#34;100%&#34; preserveAspectRatio=&#34;none&#34; viewBox=&#34;0 0 24 24&#34; class=&#34;&#34;&#62; &#60;path d=&#34;M19,3H5C3.89,3 3,3.89 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5C21,3.89 20.1,3 19,3M19,5V19H5V5H19Z&#34;&#62;&#60;/path&#62; &#60;/svg&#62;","a":"set_value"},{"dr":"2nd_click","dw":"SHAPE376","dL":"&#60;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; width=&#34;100%&#34; height=&#34;100%&#34; preserveAspectRatio=&#34;none&#34; viewBox=&#34;0 0 24 24&#34; class=&#34;&#34;&#62; &#60;path d=&#34;M10,17L5,12L6.41,10.58L10,14.17L17.59,6.58L19,8M19,3H5C3.89,3 3,3.89 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5C21,3.89 20.1,3 19,3Z&#34;&#62;&#60;/path&#62; &#60;/svg&#62;","a":"set_value"},{"dr":"2nd_click","dw":"SHAPE403","dL":"&#60;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; width=&#34;100%&#34; height=&#34;100%&#34; preserveAspectRatio=&#34;none&#34; viewBox=&#34;0 0 24 24&#34; class=&#34;&#34;&#62; &#60;path d=&#34;M10,17L5,12L6.41,10.58L10,14.17L17.59,6.58L19,8M19,3H5C3.89,3 3,3.89 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5C21,3.89 20.1,3 19,3Z&#34;&#62;&#60;/path&#62; &#60;/svg&#62;","a":"set_value"},{"dr":"2nd_click","dw":"SHAPE407","dL":"&#60;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; width=&#34;100%&#34; height=&#34;100%&#34; preserveAspectRatio=&#34;none&#34; viewBox=&#34;0 0 24 24&#34; class=&#34;&#34;&#62; &#60;path d=&#34;M10,17L5,12L6.41,10.58L10,14.17L17.59,6.58L19,8M19,3H5C3.89,3 3,3.89 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5C21,3.89 20.1,3 19,3Z&#34;&#62;&#60;/path&#62; &#60;/svg&#62;","a":"set_value"},{"dr":"2nd_click","dw":"SHAPE411","dL":"&#60;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; width=&#34;100%&#34; height=&#34;100%&#34; preserveAspectRatio=&#34;none&#34; viewBox=&#34;0 0 24 24&#34; class=&#34;&#34;&#62; &#60;path d=&#34;M10,17L5,12L6.41,10.58L10,14.17L17.59,6.58L19,8M19,3H5C3.89,3 3,3.89 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5C21,3.89 20.1,3 19,3Z&#34;&#62;&#60;/path&#62; &#60;/svg&#62;","a":"set_value"},{"dr":"2nd_click","dw":"SHAPE415","dL":"&#60;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; width=&#34;100%&#34; height=&#34;100%&#34; preserveAspectRatio=&#34;none&#34; viewBox=&#34;0 0 24 24&#34; class=&#34;&#34;&#62; &#60;path d=&#34;M10,17L5,12L6.41,10.58L10,14.17L17.59,6.58L19,8M19,3H5C3.89,3 3,3.89 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5C21,3.89 20.1,3 19,3Z&#34;&#62;&#60;/path&#62; &#60;/svg&#62;","a":"set_value"},{"dr":"2nd_click","dL":"&#60;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; width=&#34;100%&#34; height=&#34;100%&#34; preserveAspectRatio=&#34;none&#34; viewBox=&#34;0 0 24 24&#34; class=&#34;&#34;&#62; &#60;path d=&#34;M10,17L5,12L6.41,10.58L10,14.17L17.59,6.58L19,8M19,3H5C3.89,3 3,3.89 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5C21,3.89 20.1,3 19,3Z&#34;&#62;&#60;/path&#62; &#60;/svg&#62;","dw":"SHAPE425","a":"set_value"},{"dr":"2nd_click","dw":"SHAPE399","dL":"&#60;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; width=&#34;100%&#34; height=&#34;100%&#34; preserveAspectRatio=&#34;none&#34; viewBox=&#34;0 0 24 24&#34; class=&#34;&#34;&#62; &#60;path d=&#34;M10,17L5,12L6.41,10.58L10,14.17L17.59,6.58L19,8M19,3H5C3.89,3 3,3.89 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5C21,3.89 20.1,3 19,3Z&#34;&#62;&#60;/path&#62; &#60;/svg&#62;","a":"set_value"}],"aO":true,"g":"&#60;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; width=&#34;100%&#34; height=&#34;100%&#34; preserveAspectRatio=&#34;none&#34; viewBox=&#34;0 0 24 24&#34; class=&#34;&#34; fill=&#34;rgba(219, 83, 43, 1)&#34;&#62; &#60;path d=&#34;M19,3H5C3.89,3 3,3.89 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5C21,3.89 20.1,3 19,3M19,5V19H5V5H19Z&#34;&#62;&#60;/path&#62; &#60;/svg&#62;"},"HEADLINE846":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE492":{"option.is_product_mapping_name_custom":true,"a":"headline"},"GROUP304":{"a":"button","cs":[{"dr":"action","dE":["SECTION29","SECTION34","SHAPE137"],"dD":["SECTION33"],"a":"hidden_show"},{"dr":"action","dw":"SECTION33","a":"section"},{"event_custom_script":"fixAfterShow(&#39;SECTION33&#39;);","dr":"action","a":"custom_script"}]},"HEADLINE847":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE848":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE849":{"option.is_product_mapping_name_custom":true,"a":"headline"},"IMAGE335":{"a":"image","cs":[{"dr":"action","dw":"SECTION29","a":"section"},{"dr":"action","dE":["SECTION33"],"dD":["SECTION29","SECTION34"],"a":"hidden_show"}]},"SHAPE137":{"a":"image","cs":[{"dr":"action","dE":["SECTION29","SECTION33","SECTION34"],"dD":["SECTION1","SECTION2","SECTION3","SECTION4","SECTION5","SECTION6","SECTION7","SECTION10","SECTION11","SECTION14","SECTION16","SECTION21","SECTION23"],"a":"hidden_show"}]},"HEADLINE850":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE851":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE852":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE853":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE854":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE855":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE856":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE857":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE858":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE859":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE861":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE862":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE863":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE866":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE531":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE867":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE869":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE870":{"option.is_product_mapping_name_custom":true,"a":"headline","cs":[{"dr":"action","dC":"/images/size.jpg","dF":"image","a":"lightbox"}]},"FORM_ITEM60":{"a":"form_item","bS":"textarea","bQ":5},"GROUP497":{"a":"group","aB":true,"ax":"bottom","au":"0px","ar":"0px","ao":"0px","al":"0px"},"GROUP498":{"a":"group","aE":true},"IMAGE621":{"a":"image","cs":[{"dr":"action","dw":"GALLERY4","dH":7,"a":"change_index"},{"dr":"action","dw":"HEADLINE626","dL":"Áo GILE","a":"set_value"}]},"HEADLINE871":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE872":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE873":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE874":{"option.is_product_mapping_name_custom":true,"a":"headline"},"GROUP502":{"a":"group","cs":[{"dr":"action","dw":"POPUP1","a":"popup"}],"aE":true},"HEADLINE879":{"option.is_product_mapping_name_custom":true,"a":"headline","cs":[{"dr":"action","a":"collapse"}]},"HEADLINE880":{"option.is_product_mapping_name_custom":true,"a":"headline","cs":[{"dr":"action","a":"collapse"}]},"HEADLINE881":{"option.is_product_mapping_name_custom":true,"a":"headline","cs":[{"dr":"action","a":"collapse"}]},"HEADLINE882":{"option.is_product_mapping_name_custom":true,"a":"headline","cs":[{"dr":"action","a":"collapse"}]},"HEADLINE883":{"option.is_product_mapping_name_custom":true,"a":"headline","cs":[{"dr":"action","a":"collapse"}]},"HEADLINE884":{"option.is_product_mapping_name_custom":true,"a":"headline","cs":[{"dr":"action","a":"collapse"}]},"HEADLINE885":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE886":{"option.is_product_mapping_name_custom":true,"a":"headline"},"DEN":{"a":"group","cs":[{"dr":"action","dw":"ANH_CHON_MAU","dL":"/images/den.jpg","a":"set_value"},{"dr":"action","dw":"TEXT_CHON_MAU","dL":"Áo GILE - Đen","a":"set_value"},{"dr":"action","dw":"KHO_HANG","dL":"Kho: 26","a":"set_value"}]},"TRANG":{"a":"group","cs":[{"dr":"action","dw":"ANH_CHON_MAU","dL":"/images/xam.jpg","a":"set_value"},{"dr":"action","dw":"TEXT_CHON_MAU","dL":"Áo GILE - Xám","a":"set_value"},{"dr":"action","dw":"KHO_HANG","dL":"Kho: 32","a":"set_value"}]},"NAU":{"a":"group","cs":[{"dr":"action","dw":"ANH_CHON_MAU","dL":"/images/nau.jpg","a":"set_value"},{"dr":"action","dw":"TEXT_CHON_MAU","dL":"ÁO PHAO - NAU","a":"set_value"},{"dr":"action","dw":"KHO_HANG","dL":"Kho: 31","a":"set_value"}]},"D09":{"a":"group","cs":[{"dr":"action","dw":"ANH_CHON_MAU","dL":"https://w.ladicdn.com/679496e58971480012159021/artboard-2219x-100-20250924070058-w5w2z.jpg","a":"set_value"},{"dr":"action","dw":"TEXT_CHON_MAU","dL":"Sườn Xám Thiên Di Sen - D09","a":"set_value"},{"dr":"action","dw":"KHO_HANG","dL":"Kho: 16","a":"set_value"}]},"D06":{"a":"group","cs":[{"dr":"action","dw":"ANH_CHON_MAU","dL":"https://w.ladicdn.com/679496e58971480012159021/artboard-1519x-100-20250924070034-71c7y.jpg","a":"set_value"},{"dr":"action","dw":"TEXT_CHON_MAU","dL":"Sen Hồng Thanh Khiết - D06","a":"set_value"},{"dr":"action","dw":"KHO_HANG","dL":"Kho: 26","a":"set_value"}]},"D05":{"a":"group","cs":[{"dr":"action","dw":"ANH_CHON_MAU","dL":"https://w.ladicdn.com/679496e58971480012159021/artboard-1019x-100-20250924065903-ds5tq.jpg","a":"set_value"},{"dr":"action","dw":"TEXT_CHON_MAU","dL":"Chim Công Hoàng Gia - D05","a":"set_value"},{"dr":"action","dw":"KHO_HANG","dL":"Kho: 35","a":"set_value"}]},"D01":{"a":"group","cs":[{"dr":"action","dw":"ANH_CHON_MAU","dL":"https://w.ladicdn.com/679496e58971480012159021/artboard-619x-100-20250924065817-stox4.jpg","a":"set_value"},{"dr":"action","dw":"TEXT_CHON_MAU","dL":"Áo GILE","a":"set_value"},{"dr":"action","dw":"KHO_HANG","dL":"Kho: 27","a":"set_value"}]},"Text_DEN":{"option.is_product_mapping_name_custom":true,"a":"headline"},"Text_TRANG":{"option.is_product_mapping_name_custom":true,"a":"headline"},"Text_NAU":{"option.is_product_mapping_name_custom":true,"a":"headline"},"Text_D09":{"option.is_product_mapping_name_custom":true,"a":"headline"},"Text_D06":{"option.is_product_mapping_name_custom":true,"a":"headline"},"Text_D05":{"option.is_product_mapping_name_custom":true,"a":"headline"},"Text_D01":{"option.is_product_mapping_name_custom":true,"a":"headline"},"TEXT_THONG_BAO":{"option.is_product_mapping_name_custom":true,"a":"headline"},"FORM_ITEM62":{"a":"form_item","bS":"textarea","bQ":6},"FORM_ITEM63":{"a":"form_item","bS":"textarea","bQ":7},"BUTTON_TEXT68":{"option.is_product_mapping_name_custom":true,"a":"headline"},"BUTTON68":{"a":"button","cs":[{"dr":"action","dw":"TEXT_CHON_SIZE","dL":"3XL (71-75kg)","a":"set_value"}]},"BUTTON_TEXT69":{"option.is_product_mapping_name_custom":true,"a":"headline"},"BUTTON69":{"a":"button","cs":[{"dr":"action","dw":"TEXT_CHON_SIZE","dL":"4XL (76-85kg)","a":"set_value"}]},"KHO_HANG":{"option.is_product_mapping_name_custom":true,"a":"headline"},"POPUP6":{"a":"popup","X":"default","U":"background-color: rgba(0, 0, 0, 0.5);"}}</script>
     <script id="script_ladipage_run"
         type="text/javascript">(function () { var run = function () { if (typeof window.LadiPageScript == "undefined" || typeof window.ladi == "undefined" || window.ladi == undefined) { setTimeout(run, 100); return; } window.LadiPageApp = window.LadiPageApp || new window.LadiPageAppV2(); window.LadiPageScript.runtime.ladipage_id = '68e37007fbd957001256f0e4'; window.LadiPageScript.runtime.publish_platform = 'LADIPAGEDNS'; window.LadiPageScript.runtime.is_mobile_only = true; window.LadiPageScript.runtime.version = '1759722683313'; window.LadiPageScript.runtime.cdn_url = 'https://w.ladicdn.com/v5/source/'; window.LadiPageScript.runtime.DOMAIN_SET_COOKIE = ["cuongnguyenldp.online"]; window.LadiPageScript.runtime.DOMAIN_FREE = ["preview.ldpdemo.com", "ldp.page"]; window.LadiPageScript.runtime.bodyFontSize = 12; window.LadiPageScript.runtime.store_id = "679496e58971480012159021"; window.LadiPageScript.runtime.store_ladiuid = "679496c2407f2a00123fa3d9"; window.LadiPageScript.runtime.time_zone = 7; window.LadiPageScript.runtime.currency = "VND"; window.LadiPageScript.runtime.convert_replace_str = true; window.LadiPageScript.runtime.desktop_width = 960; window.LadiPageScript.runtime.mobile_width = 420; window.LadiPageScript.runtime.formdata = true; window.LadiPageScript.runtime.tracking_button_click = true; window.LadiPageScript.runtime.list_country = ["location.vn.min"]; window.LadiPageScript.runtime.publish_time = 1759786058714; window.LadiPageScript.runtime.lang = "vi"; window.LadiPageScript.run(true); window.LadiPageScript.runEventScroll(); window.LadiPageScript.loadScript("https://w.ladicdn.com/v5/source/location.vn.min.js?v=1759722683313", { defer: true }, null, function (ev) { window.LadiPageScript.runAfterLocation(); }); }; run(); })();</script>
-        <script>
-            // CROSS-DOMAIN CART SHARING FOR NETLIFY
-            (function() {
-                'use strict';
+    <script>
+    // LƯU VÀ PHỤC HỒI GIỎ HÀNG TỪ LOCALSTORAGE
+    document.addEventListener("DOMContentLoaded", function () {
+        const CFG = {
+            STORAGE_KEY: "cart_items",
+            CART_BOX_ID: "BOX119",
+            ROW_SELECTOR: ".cart-row",
+            TEMPLATE_ID: "GROUP306",
+            
+            // Các ID để tạo row mới
+            TPL_IMAGE: "IMAGE328",
+            TPL_COLOR_TEXT: "HEADLINE498",
+            TPL_SIZE_TEXT: "HEADLINE502",
+            TPL_QTY_TEXT: "HEADLINE503",
+            TPL_PRICE_TEXT: "HEADLINE499",
+            TPL_ORIG_PRICE_TEXT: "HEADLINE500",
+            TPL_PLUS_BTN: "SHAPE128",
+            TPL_MINUS_BTN: "SHAPE129",
+            TPL_REMOVE_BTN: "SHAPE130"
+        };
+
+        const $ = id => document.getElementById(id);
+        const cartBox = $(CFG.CART_BOX_ID);
+        const template = $(CFG.TEMPLATE_ID);
+        
+        if (!cartBox || !template) return;
+
+        // Helper functions
+        const setTextKeepStyle = (root, txt) => {
+            if (!root) return;
+            let leaf = root;
+            while (leaf.firstElementChild && leaf.textContent.trim() === leaf.firstElementChild.textContent.trim()) {
+                leaf = leaf.firstElementChild;
+            }
+            (leaf.querySelector("span,p,div") || leaf).textContent = txt;
+        };
+
+        const extractUrl = s => (s || "").match(/url\((?:'|")?(.*?)(?:'|")?\)/)?.[1] || "";
+        const getImageUrl = (boxId) => {
+            const el = $(boxId);
+            if (!el) return "";
+            const im = el.querySelector("img");
+            if (im) return im.src || "";
+            const bg = el.querySelector(".ladi-image-background") || el;
+            return extractUrl(getComputedStyle(bg).backgroundImage);
+        };
+
+        const setImage = (el, url) => {
+            if (!el || !url) return;
+            const im = el.querySelector("img");
+            if (im) {
+                im.src = url;
+                return;
+            }
+            (el.querySelector(".ladi-image-background") || el).style.backgroundImage = `url("${url}")`;
+        };
+
+        // Lấy thông tin sản phẩm hiện tại
+        function getCurrentProduct() {
+            return {
+                imgUrl: getImageUrl("ANH_CHON_MAU"),
+                color: ($("TEXT_CHON_MAU")?.textContent || "").trim(),
+                size: ($("TEXT_CHON_SIZE")?.textContent || "").trim(),
+                qty: Math.max(1, parseInt(($("HEADLINE134")?.textContent || "1"), 10) || 1),
+                price: ($("HEADLINE123")?.textContent || "").trim(),
+                origPrice: ($("HEADLINE124")?.textContent || "").trim(),
+                timestamp: Date.now()
+            };
+        }
+
+        // Lưu giỏ hàng vào localStorage
+        function saveCartToStorage() {
+            const items = [];
+            const rows = cartBox.querySelectorAll(CFG.ROW_SELECTOR);
+            
+            rows.forEach(row => {
+                const imgEl = row.querySelector(`#${CFG.TPL_IMAGE}`);
+                const colorEl = row.querySelector(`#${CFG.TPL_COLOR_TEXT}`);
+                const sizeEl = row.querySelector(`#${CFG.TPL_SIZE_TEXT}`);
+                const qtyEl = row.querySelector(`#${CFG.TPL_QTY_TEXT}`);
+                const priceEl = row.querySelector(`#${CFG.TPL_PRICE_TEXT}`);
+                const origPriceEl = row.querySelector(`#${CFG.TPL_ORIG_PRICE_TEXT}`);
                 
-                // ==================== CONFIG ====================
-                const CONFIG = {
-                    // Danh sách các website cần đồng bộ
-                    PARTNER_SITES: [
-                        'https://demo-bomber.netlify.app',
-                        'https://demo-som.netlify.app'
-                    ],
-                    
-                    // Key trong localStorage
-                    CART_KEY: 'shared_cart_data',
-                    USER_ID_KEY: 'cart_user_id',
-                    
-                    // Sync interval (ms)
-                    SYNC_INTERVAL: 2000,
-                    
-                    // Thời gian chờ response (ms)
-                    RESPONSE_TIMEOUT: 3000,
-                    
-                    // Debug mode
-                    DEBUG: true
-                };
-                
-                // ==================== UTILITIES ====================
-                const log = (...args) => CONFIG.DEBUG && console.log('[CartSync]', ...args);
-                const error = (...args) => console.error('[CartSync]', ...args);
-                
-                // Tạo user ID duy nhất
-                function getOrCreateUserId() {
-                    let userId = localStorage.getItem(CONFIG.USER_ID_KEY);
-                    if (!userId) {
-                        userId = 'user_' + Date.now() + '_' + Math.random().toString(36).substr(2, 9);
-                        localStorage.setItem(CONFIG.USER_ID_KEY, userId);
-                        log('Created User ID:', userId);
-                    }
-                    return userId;
-                }
-                
-                // ==================== MESSAGE MANAGER ====================
-                class MessageManager {
-                    constructor() {
-                        this.userId = getOrCreateUserId();
-                        this.currentSite = window.location.origin;
-                        this.partnerWindows = new Map();
-                        this.messageHandlers = new Map();
-                        this.pendingRequests = new Map();
-                        this.requestId = 0;
-                        
-                        this.init();
-                    }
-                    
-                    init() {
-                        // Lắng nghe messages từ các tab/website khác
-                        window.addEventListener('message', this.handleMessage.bind(this));
-                        
-                        // Lưu current window để các site khác có thể gửi message
-                        this.saveWindowReference();
-                        
-                        log('MessageManager initialized for site:', this.currentSite);
-                    }
-                    
-                    saveWindowReference() {
-                        try {
-                            localStorage.setItem('last_active_window', JSON.stringify({
-                                origin: this.currentSite,
-                                timestamp: Date.now()
-                            }));
-                        } catch (e) {
-                            // Ignore errors
-                        }
-                    }
-                    
-                    handleMessage(event) {
-                        // Chỉ chấp nhận message từ partner sites
-                        if (!CONFIG.PARTNER_SITES.includes(event.origin)) {
-                            return;
-                        }
-                        
-                        const data = event.data;
-                        if (!data || data.type !== 'cart_sync') {
-                            return;
-                        }
-                        
-                        log('Received message from:', event.origin, data);
-                        
-                        // Xử lý theo loại message
-                        switch (data.action) {
-                            case 'ping':
-                                this.sendResponse(event.source, event.origin, {
-                                    action: 'pong',
-                                    userId: this.userId,
-                                    site: this.currentSite
-                                });
-                                break;
-                                
-                            case 'get_cart':
-                                this.handleGetCart(event.source, event.origin);
-                                break;
-                                
-                            case 'update_cart':
-                                this.handleUpdateCart(event.source, event.origin, data.cartData);
-                                break;
-                                
-                            case 'response':
-                                this.handleResponse(data);
-                                break;
-                                
-                            case 'notify_change':
-                                this.handleCartChange(data.cartData);
-                                break;
-                        }
-                    }
-                    
-                    // Gửi message đến partner site
-                    sendMessage(targetOrigin, action, data = {}) {
-                        return new Promise((resolve, reject) => {
-                            const requestId = ++this.requestId;
-                            const timeoutId = setTimeout(() => {
-                                this.pendingRequests.delete(requestId);
-                                reject(new Error('Timeout waiting for response'));
-                            }, CONFIG.RESPONSE_TIMEOUT);
-                            
-                            this.pendingRequests.set(requestId, { resolve, reject, timeoutId });
-                            
-                            const message = {
-                                type: 'cart_sync',
-                                action: action,
-                                requestId: requestId,
-                                userId: this.userId,
-                                site: this.currentSite,
-                                timestamp: Date.now(),
-                                ...data
-                            };
-                            
-                            // Tìm window của partner site
-                            let targetWindow = null;
-                            
-                            // Thử các cách khác nhau để tìm target window
-                            if (window.opener && window.opener.location.origin === targetOrigin) {
-                                targetWindow = window.opener;
-                            }
-                            
-                            // Nếu không tìm thấy, mở tab mới hoặc dùng broadcast
-                            if (!targetWindow) {
-                                // Broadcast đến tất cả windows
-                                window.postMessage(message, targetOrigin);
-                            } else {
-                                targetWindow.postMessage(message, targetOrigin);
-                            }
-                            
-                            log('Sent message to:', targetOrigin, action);
-                        });
-                    }
-                    
-                    // Gửi response
-                    sendResponse(target, targetOrigin, data) {
-                        const response = {
-                            type: 'cart_sync',
-                            action: 'response',
-                            ...data
-                        };
-                        
-                        target.postMessage(response, targetOrigin);
-                    }
-                    
-                    handleResponse(data) {
-                        const request = this.pendingRequests.get(data.requestId);
-                        if (request) {
-                            clearTimeout(request.timeoutId);
-                            request.resolve(data);
-                            this.pendingRequests.delete(data.requestId);
-                        }
-                    }
-                    
-                    handleGetCart(source, origin) {
-                        const cartData = this.getLocalCart();
-                        this.sendResponse(source, origin, {
-                            action: 'cart_data',
-                            cartData: cartData
-                        });
-                    }
-                    
-                    handleUpdateCart(source, origin, newCartData) {
-                        this.updateLocalCart(newCartData);
-                        this.sendResponse(source, origin, {
-                            action: 'update_ack',
-                            success: true
-                        });
-                        
-                        // Thông báo cart đã thay đổi
-                        this.triggerCartUpdate();
-                    }
-                    
-                    handleCartChange(cartData) {
-                        this.updateLocalCart(cartData);
-                        this.triggerCartUpdate();
-                    }
-                    
-                    // ==================== PUBLIC METHODS ====================
-                    
-                    // Lấy cart từ tất cả partner sites
-                    async getAllCarts() {
-                        const carts = [];
-                        
-                        for (const site of CONFIG.PARTNER_SITES) {
-                            if (site === this.currentSite) continue;
-                            
-                            try {
-                                const response = await this.sendMessage(site, 'get_cart');
-                                if (response.cartData) {
-                                    carts.push({
-                                        site: site,
-                                        data: response.cartData
-                                    });
-                                }
-                            } catch (error) {
-                                log('Failed to get cart from:', site, error.message);
-                            }
-                        }
-                        
-                        return carts;
-                    }
-                    
-                    // Đồng bộ cart đến tất cả sites
-                    async syncCartToAll(cartData) {
-                        this.updateLocalCart(cartData);
-                        
-                        for (const site of CONFIG.PARTNER_SITES) {
-                            if (site === this.currentSite) continue;
-                            
-                            try {
-                                await this.sendMessage(site, 'update_cart', { cartData });
-                                log('Synced cart to:', site);
-                            } catch (error) {
-                                log('Failed to sync to:', site, error.message);
-                            }
-                        }
-                        
-                        this.triggerCartUpdate();
-                    }
-                    
-                    // Thông báo cart đã thay đổi
-                    notifyCartChange(cartData) {
-                        for (const site of CONFIG.PARTNER_SITES) {
-                            if (site === this.currentSite) continue;
-                            
-                            this.sendMessage(site, 'notify_change', { cartData })
-                                .catch(err => log('Notify failed for:', site));
-                        }
-                    }
-                    
-                    // ==================== LOCAL STORAGE METHODS ====================
-                    
-                    getLocalCart() {
-                        try {
-                            const data = localStorage.getItem(CONFIG.CART_KEY);
-                            return data ? JSON.parse(data) : {
-                                items: [],
-                                site: this.currentSite,
-                                lastUpdated: 0
-                            };
-                        } catch (e) {
-                            return {
-                                items: [],
-                                site: this.currentSite,
-                                lastUpdated: 0
-                            };
-                        }
-                    }
-                    
-                    updateLocalCart(cartData) {
-                        const currentCart = this.getLocalCart();
-                        
-                        // Merge carts: kết hợp items từ cả 2 sites
-                        const mergedItems = this.mergeCartItems(currentCart.items, cartData.items);
-                        
-                        const updatedCart = {
-                            items: mergedItems,
-                            site: this.currentSite,
-                            lastUpdated: Date.now(),
-                            mergedFrom: [currentCart.site, cartData.site]
-                        };
-                        
-                        localStorage.setItem(CONFIG.CART_KEY, JSON.stringify(updatedCart));
-                        log('Updated local cart:', updatedCart.items.length, 'items');
-                        
-                        return updatedCart;
-                    }
-                    
-                    mergeCartItems(items1, items2) {
-                        const itemMap = new Map();
-                        
-                        // Thêm items từ cart 1
-                        items1.forEach(item => {
-                            const key = `${item.site || 'unknown'}_${item.productId || item.color}_${item.size}`;
-                            itemMap.set(key, { ...item, source: item.site || 'site1' });
-                        });
-                        
-                        // Merge với items từ cart 2
-                        items2.forEach(item => {
-                            const key = `${item.site || 'unknown'}_${item.productId || item.color}_${item.size}`;
-                            const existing = itemMap.get(key);
-                            
-                            if (existing) {
-                                // Cộng dồn số lượng nếu cùng sản phẩm
-                                itemMap.set(key, {
-                                    ...existing,
-                                    qty: existing.qty + item.qty,
-                                    lastUpdated: Math.max(existing.lastUpdated || 0, item.lastUpdated || Date.now())
-                                });
-                            } else {
-                                itemMap.set(key, { ...item, source: item.site || 'site2' });
-                            }
-                        });
-                        
-                        return Array.from(itemMap.values());
-                    }
-                    
-                    triggerCartUpdate() {
-                        const event = new CustomEvent('sharedCartUpdated', {
-                            detail: { cart: this.getLocalCart() }
-                        });
-                        window.dispatchEvent(event);
-                    }
-                }
-                
-                // ==================== CART MANAGER ====================
-                class SharedCartManager {
-                    constructor() {
-                        this.messenger = new MessageManager();
-                        this.cartData = this.messenger.getLocalCart();
-                        this.init();
-                    }
-                    
-                    init() {
-                        // Lắng nghe cart updates
-                        window.addEventListener('sharedCartUpdated', (event) => {
-                            this.cartData = event.detail.cart;
-                            this.updateUI();
-                            this.updateCartSummary();
-                        });
-                        
-                        // Tự động đồng bộ khi trang tải
-                        this.syncOnLoad();
-                        
-                        // Đồng bộ định kỳ
-                        setInterval(() => this.syncWithPartners(), CONFIG.SYNC_INTERVAL);
-                        
-                        log('SharedCartManager initialized');
-                    }
-                    
-                    async syncOnLoad() {
-                        // Chờ 1 giây để trang tải xong
-                        setTimeout(async () => {
-                            try {
-                                const partnerCarts = await this.messenger.getAllCarts();
-                                
-                                if (partnerCarts.length > 0) {
-                                    // Merge tất cả carts
-                                    let mergedCart = this.cartData;
-                                    partnerCarts.forEach(partner => {
-                                        mergedCart = this.messenger.updateLocalCart(partner.data);
-                                    });
-                                    
-                                    this.cartData = mergedCart;
-                                    this.updateUI();
-                                    this.updateCartSummary();
-                                    
-                                    log('Synced', partnerCarts.length, 'partner carts on load');
-                                }
-                            } catch (error) {
-                                error('Sync on load failed:', error);
-                            }
-                        }, 1000);
-                    }
-                    
-                    async syncWithPartners() {
-                        try {
-                            await this.messenger.getAllCarts();
-                        } catch (error) {
-                            // Ignore sync errors
-                        }
-                    }
-                    
-                    // Thêm sản phẩm vào cart
-                    addItem(productData) {
-                        const item = {
-                            ...productData,
-                            site: window.location.origin,
-                            siteName: document.title || window.location.hostname,
-                            productId: productData.id || `${productData.color}_${productData.size}`,
-                            addedAt: Date.now(),
-                            lastUpdated: Date.now()
-                        };
-                        
-                        const currentCart = this.messenger.getLocalCart();
-                        const items = [...currentCart.items, item];
-                        
-                        const updatedCart = {
-                            ...currentCart,
-                            items: items,
-                            lastUpdated: Date.now()
-                        };
-                        
-                        // Cập nhật local và đồng bộ
-                        this.messenger.syncCartToAll(updatedCart);
-                    }
-                    
-                    // Cập nhật UI giỏ hàng
-                    updateUI() {
-                        // Gọi hàm update UI hiện có của bạn
-                        if (window.updateCartUI) {
-                            window.updateCartUI(this.cartData.items);
-                        } else {
-                            // Fallback: log ra console
-                            log('Cart items:', this.cartData.items);
-                            
-                            // Có thể trigger event để các script khác xử lý
-                            const event = new CustomEvent('cartItemsUpdated', {
-                                detail: { items: this.cartData.items }
-                            });
-                            window.dispatchEvent(event);
-                        }
-                    }
-                    
-                    // Cập nhật tổng quan giỏ hàng
-                    updateCartSummary() {
-                        const totalItems = this.cartData.items.reduce((sum, item) => sum + (item.qty || 1), 0);
-                        const totalPrice = this.cartData.items.reduce((sum, item) => {
-                            const price = parseFloat(item.price?.replace(/[^\d]/g, '') || 0);
-                            return sum + (price * (item.qty || 1));
-                        }, 0);
-                        
-                        log('Cart summary:', totalItems, 'items, total:', totalPrice);
-                        
-                        // Cập nhật counter nếu có
-                        const counterEl = document.getElementById('HEADLINE311');
-                        if (counterEl) {
-                            counterEl.textContent = totalItems.toString();
-                        }
-                    }
-                    
-                    // Lấy toàn bộ cart
-                    getCart() {
-                        return this.cartData;
-                    }
-                    
-                    // Xóa cart
-                    clearCart() {
-                        const emptyCart = {
-                            items: [],
-                            site: window.location.origin,
-                            lastUpdated: Date.now()
-                        };
-                        
-                        this.messenger.syncCartToAll(emptyCart);
-                    }
-                }
-                
-                // ==================== INTEGRATION WITH EXISTING CODE ====================
-                
-                // Hàm helper để lấy thông tin sản phẩm từ UI hiện tại
-                function getCurrentProductInfo() {
-                    // Sử dụng các ID từ code của bạn
-                    const getElementText = (id) => {
-                        const el = document.getElementById(id);
-                        return el ? (el.textContent || '').trim() : '';
-                    };
-                    
-                    const getImageUrl = (boxId) => {
-                        const el = document.getElementById(boxId);
-                        if (!el) return '';
-                        
-                        // Thử lấy từ thẻ img
-                        const img = el.querySelector('img');
-                        if (img && img.src) return img.src;
-                        
-                        // Thử lấy từ background
-                        const bg = el.querySelector('.ladi-image-background') || el;
-                        const style = getComputedStyle(bg);
-                        const bgImage = style.backgroundImage;
-                        const match = bgImage.match(/url\(["']?(.*?)["']?\)/);
-                        return match ? match[1] : '';
-                    };
-                    
-                    return {
-                        id: `product_${Date.now()}`,
-                        imgUrl: getImageUrl('ANH_CHON_MAU'),
-                        color: getElementText('TEXT_CHON_MAU'),
-                        size: getElementText('TEXT_CHON_SIZE'),
-                        qty: parseInt(getElementText('HEADLINE134') || '1', 10) || 1,
-                        price: getElementText('HEADLINE123'),
-                        origPrice: getElementText('HEADLINE124'),
-                        name: document.title || 'Sản phẩm'
-                    };
-                }
-                
-                // Patch nút "Thêm vào giỏ"
-                function patchAddToCartButtons() {
-                    const addButtons = ["GROUP109", "GROUP331"];
-                    let sharedCart = null;
-                    
-                    // Khởi tạo SharedCartManager
-                    setTimeout(() => {
-                        sharedCart = new SharedCartManager();
-                        window.sharedCart = sharedCart; // Expose cho debug
-                    }, 500);
-                    
-                    addButtons.forEach(btnId => {
-                        const btn = document.getElementById(btnId);
-                        if (!btn) return;
-                        
-                        // Lưu sự kiện click gốc
-                        const originalOnClick = btn.onclick;
-                        
-                        btn.addEventListener('click', function(e) {
-                            // Kiểm tra điều kiện chọn màu/size
-                            const colorText = (document.getElementById('TEXT_CHON_MAU')?.textContent || '').trim();
-                            const sizeText = (document.getElementById('TEXT_CHON_SIZE')?.textContent || '').trim();
-                            
-                            const isPlaceholder = (text, placeholders) => 
-                                placeholders.some(p => text === p);
-                            
-                            const invalidColor = isPlaceholder(colorText, ['Mẫu...']);
-                            const invalidSize = isPlaceholder(sizeText, ['Size của bạn...']);
-                            
-                            if (invalidColor || invalidSize) {
-                                e.preventDefault();
-                                e.stopPropagation();
-                                
-                                // Hiển thị thông báo
-                                const notice = document.getElementById('TEXT_THONG_BAO');
-                                if (notice) notice.style.display = '';
-                                
-                                return;
-                            }
-                            
-                            // Thêm vào shared cart
-                            if (sharedCart) {
-                                const productInfo = getCurrentProductInfo();
-                                sharedCart.addItem(productInfo);
-                                log('Added to shared cart:', productInfo);
-                            }
-                            
-                            // Vẫn thực hiện hành động gốc (nếu có)
-                            if (originalOnClick) {
-                                originalOnClick.call(this, e);
-                            }
-                            
-                        }, true); // Use capture để chạy trước
-                    });
-                }
-                
-                // Cập nhật UI giỏ hàng khi có thay đổi
-                function setupCartUpdateListener() {
-                    window.addEventListener('cartItemsUpdated', function(event) {
-                        const items = event.detail.items;
-                        
-                        // Gọi các hàm update hiện có
-                        if (window.recalcAndApply) recalcAndApply();
-                        if (window.computeTotal) computeTotal();
-                        if (window.rebuildMirror) rebuildMirror();
-                        if (window.apply) apply();
-                        
-                        // Có thể thêm logic render items tại đây
-                        console.log('Cart updated with:', items.length, 'items');
-                    });
-                }
-                
-                // ==================== INITIALIZATION ====================
-                
-                function initSharedCart() {
-                    // Đợi DOM sẵn sàng
-                    if (document.readyState === 'loading') {
-                        document.addEventListener('DOMContentLoaded', function() {
-                            setTimeout(() => {
-                                patchAddToCartButtons();
-                                setupCartUpdateListener();
-                                new SharedCartManager(); // Khởi tạo manager
-                            }, 1000);
-                        });
+                // Lấy URL ảnh từ element
+                let imgUrl = "";
+                if (imgEl) {
+                    const im = imgEl.querySelector("img");
+                    if (im && im.src) {
+                        imgUrl = im.src;
                     } else {
-                        setTimeout(() => {
-                            patchAddToCartButtons();
-                            setupCartUpdateListener();
-                            new SharedCartManager();
-                        }, 1000);
+                        const bg = imgEl.querySelector('.ladi-image-background') || imgEl;
+                        imgUrl = extractUrl(getComputedStyle(bg).backgroundImage);
                     }
                 }
                 
-                // Khởi động
-                initSharedCart();
-                
-                // Export cho debug
-                window.SharedCart = {
-                    getCart: () => new SharedCartManager().getCart(),
-                    clearCart: () => new SharedCartManager().clearCart(),
-                    forceSync: () => new SharedCartManager().syncWithPartners()
-                };
-                
-                log('Shared cart system initialized for:', window.location.origin);
-            })();
-            </script>
-        <script>
-            // DISPLAY COMBINED CART FROM BOTH SITES
-            (function() {
-                'use strict';
-                
-                // Đợi hệ thống shared cart khởi tạo
-                const waitForSharedCart = setInterval(() => {
-                    if (window.SharedCart) {
-                        clearInterval(waitForSharedCart);
-                        initCombinedCartDisplay();
+                items.push({
+                    imgUrl: imgUrl,
+                    color: colorEl?.textContent?.trim() || "",
+                    size: sizeEl?.textContent?.trim() || "",
+                    qty: parseInt(qtyEl?.textContent?.trim() || "1") || 1,
+                    price: priceEl?.textContent?.trim() || "",
+                    origPrice: origPriceEl?.textContent?.trim() || "",
+                    timestamp: Date.now()
+                });
+            });
+            
+            localStorage.setItem(CFG.STORAGE_KEY, JSON.stringify(items));
+            console.log("Đã lưu giỏ hàng:", items.length, "sản phẩm");
+        }
+
+        // Tạo row từ dữ liệu
+        function createRowFromData(item) {
+            const clone = template.cloneNode(true);
+            clone.removeAttribute("id");
+            
+            // Điền dữ liệu
+            setImage(clone.querySelector(`#${CFG.TPL_IMAGE}`), item.imgUrl);
+            setTextKeepStyle(clone.querySelector(`#${CFG.TPL_COLOR_TEXT}`), item.color);
+            setTextKeepStyle(clone.querySelector(`#${CFG.TPL_SIZE_TEXT}`), item.size);
+            setTextKeepStyle(clone.querySelector(`#${CFG.TPL_QTY_TEXT}`), String(item.qty));
+            
+            if (item.price) {
+                setTextKeepStyle(clone.querySelector(`#${CFG.TPL_PRICE_TEXT}`), item.price);
+            }
+            if (item.origPrice) {
+                setTextKeepStyle(clone.querySelector(`#${CFG.TPL_ORIG_PRICE_TEXT}`), item.origPrice);
+            }
+            
+            // Wire up buttons
+            const row = document.createElement("div");
+            row.className = "cart-row";
+            row.dataset.color = item.color;
+            row.dataset.size = item.size;
+            
+            const plusBtn = clone.querySelector(`#${CFG.TPL_PLUS_BTN}`);
+            const minusBtn = clone.querySelector(`#${CFG.TPL_MINUS_BTN}`);
+            const removeBtn = clone.querySelector(`#${CFG.TPL_REMOVE_BTN}`);
+            
+            if (plusBtn) {
+                plusBtn.addEventListener("click", (e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    const newQty = item.qty + 1;
+                    item.qty = newQty;
+                    setTextKeepStyle(clone.querySelector(`#${CFG.TPL_QTY_TEXT}`), String(newQty));
+                    saveCartToStorage();
+                    // Kích hoạt sự kiện để tính toán lại
+                    cartBox.dispatchEvent(new Event('cartUpdated'));
+                }, true);
+            }
+            
+            if (minusBtn) {
+                minusBtn.addEventListener("click", (e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    const newQty = item.qty - 1;
+                    if (newQty <= 0) {
+                        row.remove();
+                        saveCartToStorage();
+                        cartBox.dispatchEvent(new Event('cartUpdated'));
+                        return;
                     }
-                }, 500);
+                    item.qty = newQty;
+                    setTextKeepStyle(clone.querySelector(`#${CFG.TPL_QTY_TEXT}`), String(newQty));
+                    saveCartToStorage();
+                    cartBox.dispatchEvent(new Event('cartUpdated'));
+                }, true);
+            }
+            
+            if (removeBtn) {
+                removeBtn.addEventListener("click", (e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    row.remove();
+                    saveCartToStorage();
+                    cartBox.dispatchEvent(new Event('cartUpdated'));
+                }, true);
+            }
+            
+            // Đo chiều cao
+            const prevDisp = clone.style.display;
+            clone.style.visibility = "hidden";
+            clone.style.display = "";
+            clone.style.position = "absolute";
+            clone.style.left = "-9999px";
+            document.body.appendChild(clone);
+            const measuredH = Math.ceil(clone.getBoundingClientRect().height) || 120;
+            document.body.removeChild(clone);
+            clone.style.visibility = "";
+            clone.style.display = prevDisp || "";
+            
+            // Thiết lập row
+            const finalH = measuredH + 12;
+            row.style.position = "relative";
+            row.style.height = finalH + "px";
+            row.style.width = "100%";
+            clone.style.display = "";
+            clone.style.position = "absolute";
+            clone.style.left = "0";
+            clone.style.top = "0";
+            
+            row.appendChild(clone);
+            return row;
+        }
+
+        // Khôi phục giỏ hàng từ localStorage
+        function restoreCartFromStorage() {
+            try {
+                const saved = localStorage.getItem(CFG.STORAGE_KEY);
+                if (!saved) return;
                 
-                function initCombinedCartDisplay() {
-                    // Lắng nghe thay đổi cart
-                    window.addEventListener('sharedCartUpdated', updateCombinedCartDisplay);
-                    
-                    // Cập nhật lần đầu
-                    setTimeout(updateCombinedCartDisplay, 1500);
-                }
+                const items = JSON.parse(saved);
+                if (!Array.isArray(items) || items.length === 0) return;
                 
-                function updateCombinedCartDisplay() {
-                    try {
-                        const cart = window.SharedCart.getCart();
-                        if (!cart || !cart.items) return;
-                        
-                        // Phân loại items theo site
-                        const itemsBySite = {};
-                        cart.items.forEach(item => {
-                            const site = item.site || 'unknown';
-                            if (!itemsBySite[site]) {
-                                itemsBySite[site] = [];
-                            }
-                            itemsBySite[site].push(item);
-                        });
-                        
-                        // Hiển thị thông tin
-                        displayCartSummary(itemsBySite, cart.items);
-                        
-                        // Nếu đang ở trang thanh toán, cập nhật form
-                        updateCheckoutForm(cart.items);
-                        
-                    } catch (error) {
-                        console.error('Error updating cart display:', error);
+                // Xóa các row hiện tại (giữ template)
+                const existingRows = cartBox.querySelectorAll(CFG.ROW_SELECTOR);
+                existingRows.forEach(row => row.remove());
+                
+                // Thêm lại từng item
+                items.forEach(item => {
+                    const row = createRowFromData(item);
+                    if (row) {
+                        cartBox.appendChild(row);
                     }
-                }
+                });
                 
-                function displayCartSummary(itemsBySite, allItems) {
-                    // Tạo HTML summary
-                    let summaryHTML = '<div style="margin: 10px 0; padding: 10px; background: #f5f5f5; border-radius: 5px;">';
-                    summaryHTML += '<strong>🛒 Giỏ hàng tổng hợp:</strong><br>';
-                    
-                    Object.keys(itemsBySite).forEach(site => {
-                        const siteItems = itemsBySite[site];
-                        const siteName = siteItems[0]?.siteName || 
-                                       (site.includes('bomber') ? 'Bomber' : 
-                                        site.includes('som') ? 'Som' : site);
-                        
-                        summaryHTML += `<div style="margin-top: 5px;">
-                            <strong>${siteName}:</strong> ${siteItems.length} sản phẩm
-                        </div>`;
-                    });
-                    
-                    const totalItems = allItems.reduce((sum, item) => sum + (item.qty || 1), 0);
-                    const totalPrice = allItems.reduce((sum, item) => {
-                        const price = parseFloat(item.price?.replace(/[^\d]/g, '') || 0);
-                        return sum + (price * (item.qty || 1));
-                    }, 0);
-                    
-                    summaryHTML += `<hr style="margin: 5px 0;">
-                        <div><strong>Tổng:</strong> ${totalItems} sản phẩm</div>
-                        <div><strong>Tổng tiền:</strong> ${formatPrice(totalPrice)}</div>
-                    </div>`;
-                    
-                    // Hiển thị ở vị trí phù hợp
-                    const containerId = 'combined-cart-summary';
-                    let container = document.getElementById(containerId);
-                    
-                    if (!container) {
-                        container = document.createElement('div');
-                        container.id = containerId;
-                        container.style.cssText = `
-                            position: fixed;
-                            top: 10px;
-                            right: 10px;
-                            z-index: 9999;
-                            max-width: 300px;
-                            background: white;
-                            border: 1px solid #ddd;
-                            border-radius: 8px;
-                            padding: 15px;
-                            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-                            font-size: 14px;
-                        `;
-                        document.body.appendChild(container);
-                    }
-                    
-                    container.innerHTML = summaryHTML;
-                }
+                console.log("Đã khôi phục giỏ hàng:", items.length, "sản phẩm");
+                // Kích hoạt sự kiện để các script khác cập nhật
+                setTimeout(() => {
+                    cartBox.dispatchEvent(new Event('cartUpdated'));
+                }, 100);
                 
-                function updateCheckoutForm(items) {
-                    // Chỉ chạy ở trang thanh toán
-                    if (!window.location.href.includes('thanh-toan') && 
-                        !window.location.href.includes('checkout')) {
+            } catch (error) {
+                console.error("Lỗi khi khôi phục giỏ hàng:", error);
+                localStorage.removeItem(CFG.STORAGE_KEY);
+            }
+        }
+
+        // Sửa đổi nút "Thêm vào giỏ" để lưu vào localStorage
+        function modifyAddToCartButtons() {
+            const addButtons = ["GROUP109", "GROUP331"];
+            
+            addButtons.forEach(btnId => {
+                const btn = $(btnId);
+                if (!btn) return;
+                
+                // Lưu sự kiện click gốc nếu có
+                const oldClick = btn.onclick;
+                
+                btn.addEventListener("click", function(e) {
+                    // Kiểm tra xem sản phẩm đã được chọn đầy đủ chưa
+                    const colorTxt = ($("TEXT_CHON_MAU")?.textContent || "").trim();
+                    const sizeTxt = ($("TEXT_CHON_SIZE")?.textContent || "").trim();
+                    const PLACEHOLDER_COLOR = ["Mẫu..."];
+                    const PLACEHOLDER_SIZE = ["Size của bạn..."];
+                    
+                    const isInList = (txt, list) => list.includes(String(txt).trim());
+                    const isValid = !isInList(colorTxt, PLACEHOLDER_COLOR) && !isInList(sizeTxt, PLACEHOLDER_SIZE);
+                    
+                    if (!isValid) {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        // Hiển thị thông báo nếu cần
+                        const notice = $("TEXT_THONG_BAO");
+                        if (notice) notice.style.display = "";
                         return;
                     }
                     
-                    // Cập nhật ô "san_pham" trong form
-                    const productField = document.getElementById('san_pham') || 
-                                       document.querySelector('[name="san_pham"]');
+                    // Cho phép xử lý gốc chạy trước
+                    if (oldClick) oldClick.call(this, e);
                     
-                    if (productField && items.length > 0) {
-                        const productText = items.map(item => {
-                            const siteName = item.siteName || (item.site.includes('bomber') ? 'Bomber' : 'Som');
-                            return `${siteName}: ${item.color} - Size ${item.size} x ${item.qty} - ${item.price}`;
-                        }).join('\n');
-                        
-                        productField.value = productText;
-                        
-                        // Trigger events để form nhận biết thay đổi
-                        productField.dispatchEvent(new Event('input', { bubbles: true }));
-                        productField.dispatchEvent(new Event('change', { bubbles: true }));
-                    }
-                    
-                    // Cập nhật tổng tiền
-                    const totalField = document.getElementById('tong_tien') ||
-                                      document.querySelector('[name="tong_tien"]');
-                    
-                    if (totalField) {
-                        const totalPrice = items.reduce((sum, item) => {
-                            const price = parseFloat(item.price?.replace(/[^\d]/g, '') || 0);
-                            return sum + (price * (item.qty || 1));
-                        }, 0);
-                        
-                        totalField.value = formatPrice(totalPrice) + 'đ';
-                        totalField.dispatchEvent(new Event('input', { bubbles: true }));
-                        totalField.dispatchEvent(new Event('change', { bubbles: true }));
-                    }
-                }
-                
-                function formatPrice(price) {
-                    return new Intl.NumberFormat('vi-VN').format(price);
-                }
-                
-                // Thêm nút clear cart cho debug
-                if (window.location.hostname.includes('netlify')) {
+                    // Sau khi thêm vào giỏ UI, lưu vào localStorage
                     setTimeout(() => {
-                        const clearBtn = document.createElement('button');
-                        clearBtn.textContent = '🗑️ Clear Cart';
-                        clearBtn.style.cssText = `
-                            position: fixed;
-                            bottom: 10px;
-                            right: 10px;
-                            z-index: 10000;
-                            padding: 5px 10px;
-                            background: #ff4444;
-                            color: white;
-                            border: none;
-                            border-radius: 4px;
-                            cursor: pointer;
-                            font-size: 12px;
-                        `;
-                        clearBtn.onclick = () => {
-                            if (window.SharedCart) {
-                                window.SharedCart.clearCart();
-                                alert('Đã xóa giỏ hàng');
-                            }
-                        };
-                        document.body.appendChild(clearBtn);
-                    }, 2000);
-                }
-            })();
-            </script>
+                        saveCartToStorage();
+                        // Kích hoạt sự kiện để các script khác cập nhật
+                        cartBox.dispatchEvent(new Event('cartUpdated'));
+                    }, 50);
+                }, true);
+            });
+        }
+
+        // Quan sát thay đổi trong giỏ hàng để tự động lưu
+        function observeCartChanges() {
+            const observer = new MutationObserver(() => {
+                saveCartToStorage();
+            });
+            
+            observer.observe(cartBox, {
+                childList: true,
+                subtree: true,
+                characterData: true
+            });
+        }
+
+        // Khởi động
+        function init() {
+            // Khôi phục giỏ hàng khi trang tải
+            restoreCartFromStorage();
+            
+            // Sửa đổi nút thêm vào giỏ
+            modifyAddToCartButtons();
+            
+            // Quan sát thay đổi
+            observeCartChanges();
+            
+            // Thêm sự kiện để các script khác lắng nghe
+            window.addEventListener('cartUpdated', () => {
+                // Kích hoạt lại các tính toán
+                if (window.recalcAndApply) recalcAndApply();
+                if (window.computeTotal) computeTotal();
+                if (window.rebuildMirror) rebuildMirror();
+                if (window.apply) apply();
+            });
+        }
+
+        // Chờ DOM sẵn sàng
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', init);
+        } else {
+            init();
+        }
+    });
+</script>
     <script>
         // ĐỔI MÀU NÚT KHI CHỌN SẢN PHẨM GIÁ TRỊ
         (function () {
